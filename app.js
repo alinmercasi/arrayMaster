@@ -228,6 +228,8 @@ const findDiff = array => {
 // const input =
 //   'Every developer likes to mix kubernetes and javascript that only to test four letters'
 
+const input =
+  'Every developer likes to mix kubernetes and javascript that only to test four letters'
 // const numeronym = string => {
 //   const coded = string
 //     .split(' ')
@@ -246,7 +248,7 @@ const numeronym = string =>
     .map(item =>
       item.length <= 4
         ? `${item}`
-        : `${item.at(0)}${item.at(-2)}${item.at(-1)}`,
+        : `${item.at(0)}${item.length - 2}${item.at(-1)}`,
     )
     .join(' ')
 
